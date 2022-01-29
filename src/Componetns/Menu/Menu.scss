@@ -1,0 +1,112 @@
+.menu {
+    margin-top: 60px;
+    margin-bottom: 31px;
+    margin-left: auto;
+    margin-right: auto;
+    // position: relative;
+
+    .container {
+        position: relative;
+    }
+
+    &::-webkit-scrollbar{
+        width: 0;
+    }
+
+    .arrow{
+        color: #4E72CA;
+        width: 34px;
+        height: 34px;
+        background-color: white;
+        border-radius: 50%;
+        box-shadow: 1px 3px 6px rgba(231, 201, 201, 0.129);
+        position: absolute;
+        cursor: pointer;     
+
+        &.left {
+            transform: rotateY(180deg) translateY(50%) translateX(30px);
+            top: 0;
+            left: 0;
+
+            &:active{
+                transform: rotateY(180deg) scale(0.9) translateY(50%) translateX(30px);
+            }
+        }
+
+        &.right {
+            transform: translateY(50%) translateX(30px);
+            right: 0;
+            top: 0;
+        }
+
+        &:active{
+            transform: scale(0.9) translateY(50%) translateX(30px);
+        }
+    }
+
+    &__list {
+        overflow-x: hidden;
+        width: 1100px;        
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__item {
+        display: flex;
+        min-width: 125px;
+        flex-direction: column;
+        align-items: center;
+        transition: all 1s ease;
+        margin-right: 10px;
+        cursor: pointer;
+        transform: translateX(0);    
+
+        &:nth-child(2n){
+            .menu__item-span{
+                background:#B4E2E1;
+            }
+        }
+
+        &:nth-child(3n){
+            .menu__item-span{
+                background: #FF9E83;
+            }
+        }
+
+        &:nth-child(4n){
+            .menu__item-span {
+                background:#F7E233;
+            }
+        }
+
+        &:nth-child(5n){
+            .menu__item-span{
+                background: #F6DAC2;
+            }
+        }
+
+        &-span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 75px;
+            height: 75px;
+            background: #B6CAFB;
+            margin-bottom: 6px;
+            border-radius: 20px;
+
+        }
+
+        &-text {
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 17px;
+            white-space: nowrap;
+            color: #4A4A4A;
+        }
+    }
+
+}

@@ -1,0 +1,98 @@
+.product {
+    padding-bottom: 30px;
+
+    &__head {
+        padding: 10px 0;
+        border-bottom: 1px solid #D5D5D5;
+        margin-bottom: 15px;
+
+        span {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 30px;
+            color: #9B9B9B;
+            cursor: pointer;
+        }
+
+        .active {
+            color: #4E72CA;
+            position: relative;
+
+            &::before{
+                content: '';
+                display: inline-block;
+                width: 70%;
+                height: 2px;
+                background-color: #4E72CA;
+                position: absolute;
+                left: 15%;
+                bottom: -13px;
+            }
+        }
+
+        span ~ span {
+            margin-left: 71px;
+        }
+    }
+
+    &__list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(182, 202, 251, 0.606827);
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+
+        &-item {
+            margin-bottom: 35px;
+            display: flex;
+            flex-direction: column;
+            height: 262px;
+            width: 265px;
+            justify-content: space-between;
+
+            p{
+                margin: 0;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                color: #000000;
+            }
+            
+            img {
+                border-radius: 8px !important;
+            }
+
+            &-box {
+                display: flex;
+                flex-direction: column;
+
+                span {
+                    font-weight: 500;
+                    font-size: 12px;
+                    opacity: 0.7;
+                    line-height: 19px;
+                }
+                b {
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #000000;
+                }
+            }
+        }
+    }
+
+    &__btn {
+        border: none;
+        background-color: transparent;
+        color: #4E72CA;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+    }
+}
