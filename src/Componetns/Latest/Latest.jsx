@@ -36,7 +36,6 @@ function Latest() {
                         <div className="product__list-item-box">
                             <span>{d.data}</span>
                             <b>{d.money}</b>
-                            {console.log(d)}
                         </div>
                     </li>
                 ))}

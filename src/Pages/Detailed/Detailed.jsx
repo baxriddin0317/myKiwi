@@ -5,10 +5,10 @@ import Data from "../../Assets/Baza/MOCK_DATA.json";
 import Latest from '../../Componetns/Latest/Latest';
 
 function Detailed() {
-    const {id} = useParams();
-
-    const obj = Data.find((obj) => obj.id === id);
-
+    const {nomir} = useParams();
+    
+    let obj = Data.find((obj) => obj.id === nomir ? "" : obj);
+    
   return (
       <div className="detailed">
           <div className="container">
