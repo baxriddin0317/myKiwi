@@ -7,7 +7,7 @@ import Latest from '../../Componetns/Latest/Latest';
 function Detailed() {
     const {id} = useParams();
 
-    const obj = Data.find((obj) => obj.id == id);
+    const obj = Data.find((obj) => obj.id === id);
 
   return (
       <div className="detailed">
