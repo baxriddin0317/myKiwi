@@ -99,7 +99,7 @@
 {"id":99, "type": "yaxshi", "imgUrl":"https://picsum.photos/292/190?random=99","last_name":"Warthog","money":"$19.90","data":"1/6/2022"}, 
 {"id":100, "type":"yangi", "imgUrl":"https://picsum.photos/292/190?random=100","last_name":"Mourning collared dove","money":"$19.28","data":"8/22/2021"},
 {"id":101, "type": "korildi", "imgUrl":"https://picsum.photos/292/190?random=10","last_name":"Siskin, pine","money":"$25.86","data":"1/21/2022"},
-{"id":101, "type": "korildi", "imgUrl":"https://picsum.photos/292/190?random=11","last_name":"Tern, arctic","money":"$9.03","data":"3/23/2021"},
+{"id":120, "type": "korildi", "imgUrl":"https://picsum.photos/292/190?random=11","last_name":"Tern, arctic","money":"$9.03","data":"3/23/2021"},
 {"id":102, "type": "korildi", "imgUrl":"https://picsum.photos/292/190?random=12","last_name":"Mouse, four-striped grass","money":"$0.03","data":"12/14/2021"},
 {"id":103, "type": "korildi", "imgUrl":"https://picsum.photos/292/190?random=13","last_name":"American woodcock","money":"$5.71","data":"2/5/2021"},
 {"id":104, "type": "korildi", "imgUrl":"https://picsum.photos/292/190?random=14","last_name":"Bohor reedbuck","money":"$9.21","data":"2/25/2021"},

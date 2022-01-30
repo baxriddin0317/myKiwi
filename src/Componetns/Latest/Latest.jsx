@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import "../Product/Product.scss"
 import Data from "../../Assets/Baza/MOCK_DATA.json";
 import { KeyboardArrowDownSharp } from '@mui/icons-material';
+import { useNavigate } from 'react-router-dom';
 
 
 function Latest() {
+    const navigate = useNavigate();
     const [num, setNum] = useState(4);
     const [products, setProducts] = useState(Data.filter((d) => d.type === "korildi"));
     
@@ -17,7 +19,7 @@ function Latest() {
 
         setProducts(Data.filter((d) => d.type === evt.currentTarget.id));
     }
-
+    
   return (
     <div className='product container'>
             <div className="product__head">
@@ -28,12 +30,13 @@ function Latest() {
 
             <ul className="product__list">
                 {products.slice(0, num).map(d => (
-                    <li className="product__list-item" key={Math.random()*2000}>
+                    <li className="product__list-item" key={d.id} onClick={() => navigate(`/product/${d.id}`)}>
                         <img src={d.imgUrl} width={262} height={190} alt="" />
                         <p>{d.last_name}</p>
                         <div className="product__list-item-box">
                             <span>{d.data}</span>
                             <b>{d.money}</b>
+                            {console.log(d)}
                         </div>
                     </li>
                 ))}

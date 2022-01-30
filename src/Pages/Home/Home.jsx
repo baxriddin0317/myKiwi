@@ -1,5 +1,4 @@
 import React from 'react'
-import Footer from '../../Componetns/Footer/Footer'
 import Latest from '../../Componetns/Latest/Latest'
 import Menu from '../../Componetns/Menu/Menu'
 import Offers from '../../Componetns/Offers/Offers'
@@ -14,7 +13,6 @@ function Home() {
             </div>
             <Offers />
             <Latest />
-            <Footer />
         </div>
     )
 }

@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import "./Product.scss";
 import Data from "../../Assets/Baza/MOCK_DATA.json";
 import { KeyboardArrowDownSharp } from '@mui/icons-material';
+import { useNavigate } from 'react-router-dom';
 
 function Product() {
+    const navigate = useNavigate();
     const [span, setSpan] = useState(true);
     const [num, setNum] = useState(16);
     const [products, setProducts] = useState(Data.slice(0, 16).filter((d) => d.type === "yangi"));
@@ -23,7 +25,7 @@ function Product() {
 
             <ul className="product__list">
                 {products.slice(0, num).map(d => (
-                    <li className="product__list-item" key={d.id}>
+                    <li className="product__list-item" key={d.id} onClick={() => navigate(`/product/${d.id}`)}>
                         <img src={d.imgUrl} width={262} height={190} alt="" />
                         <p>{d.last_name}</p>
                         <div className="product__list-item-box">
