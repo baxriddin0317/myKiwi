@@ -24,7 +24,7 @@ function RegistratsiyaBir() {
     <div className="block">
         <h3>Бесплатная регистрация</h3>
         <form action="#" className="form">
-            <input type="text" ref={login} placeholder='xoja deb yozing' />
+            <input type="text" ref={login} placeholder='shaxlo deb yozing' />
             <button type='submit' onClick={() => handleNavigate()}>Далее</button>
         </form>
         <div className="box">
